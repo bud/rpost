@@ -1,0 +1,51 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: yellow;
+}
+
+:root {
+    --background: #000000;
+    --navbar-width: 256px;
+    --navbar-width-min: 80px;
+    --navbar-dark-primary: #E7473C;
+    --navbar-dark-secondary: #E7473C;
+    --navbar-light-primary: #f5f6fa;
+    --navbar-light-secondary: #ffffff;
+}
+  
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.first {    
+    width: 17%;
+}
+
+.middle-section {
+    position: relative;
+    width: 57.5%;
+    height: fit-content;
+}
+
+.middle-section::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    bottom: 0;
+}
+
+
+.middle-section::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 0;
+    bottom: 0;
+}
+
+.last {
+    width: 30%;
+    word-wrap: break-word;
+}

@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-section {
+    width: 50%;
+    position: sticky;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.right-section {
+    width: 50%;
+    overflow-y: auto;
+}

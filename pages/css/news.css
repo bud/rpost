@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+#newsFeed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.news-article {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    overflow: hidden; 
+    padding: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.news-article:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.news-article h3 {
+    margin-top: 0; 
+    margin-bottom: 10px;
+    font-size: 1.2em; 
+    color: #333;
+}
+
+.news-article h3 a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.news-article p {
+    margin: 0; 
+    font-size: 0.9em;
+    color: #666;
+}
+
+#newsHeader {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 3px;
+}
+
+#searchContainer {
+    display: flex;
+    gap: 10px; 
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#newsSearchInput {
+    flex-grow: 1; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 35px;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+#searchContainer {
+    display: flex;
+    gap: 10px; 
+    margin-bottom: 20px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#newsSearchInput, #newsCategory {
+    flex-grow: 1; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 35px;
+}
+
+#newsCategory {
+    max-width: 200px;
+}

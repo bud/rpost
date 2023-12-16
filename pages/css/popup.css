@@ -1,0 +1,142 @@
+:root {
+    --background: #EFFAFD;
+    --navbar-width: 256px;
+    --navbar-width-min: 80px;
+    --navbar-dark-primary: #E7473C;
+    --navbar-dark-secondary: #E7473C;
+    --navbar-light-primary: #f5f6fa;
+    --navbar-light-secondary: #ffffff;
+  }
+  
+  .left-border {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    overflow: hidden; 
+    padding: 0 16px 0 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 16px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .left-border:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    z-index: 2;
+  }
+
+button {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  padding: 14px 22px;
+  border: none;
+  background: #4070f4;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #265df2;
+}
+
+button.show-modal,
+.modal-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+section.active .show-modal {
+  display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    display: none;
+    z-index: 1000; /* Ensure it appears above other content but below the modal */
+}
+
+/* When the overlay is active (modal is open), display it */
+section.active .overlay {
+    display: block;
+}
+
+.modal-box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    background-color: #E7473C;
+    border-radius: 24px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.tweet-header-info {
+    margin-left: 5px; 
+    font-size: 16px;
+}
+
+.tweet-form textarea {
+    width: 95%;
+    height: 300px;
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 4px; 
+    resize: none; 
+    overflow-y: auto;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+.tweet-form textarea:focus {
+    border-color: #4070f4;
+    outline: none; 
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.post-btn{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+}

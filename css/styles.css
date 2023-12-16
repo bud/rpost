@@ -1,0 +1,352 @@
+.image-container {
+    text-align: center;
+}
+
+.logo {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #222222;
+    background-color: #F7F7FF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+form {
+    background-color: #F7F7FF;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 400px;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input[type="text"], input[type="password"],
+select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: thick;
+    border-color: #222222;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #F7F7FF;
+    font-weight: bold;
+    color: #222222;
+    border-style: solid;
+    border-width: thick;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(206, 193, 192);
+}
+
+.red-fill {
+    background-color: #FE5F55;
+    border-style: solid;
+    border-width: thick;
+    border-color: #222222;
+}
+
+a {
+    font-size: 25px;
+    color: #222222;
+}
+
+a:visited {
+    color: #222222;
+}
+
+::placeholder {
+    color: #222222;
+}
+
+.border {
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #222222;
+    border-width: thick;
+}
+
+div.post {
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+.fyp {
+    font-size: 50px;
+}
+
+.poster, .time, .likes {
+    display: inline;
+}
+
+.left {
+    margin-top: 100px;
+    padding: 10px;
+    width: 25%;
+}
+
+li {
+    margin-top: 20px;
+}
+
+h3.bwEventsTitle {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.like {
+    float: right;
+}
+
+#cornerLogo {
+    left: 0px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+#profileInfo {
+    padding: 10px;
+}
+
+#yourTweets {
+    margin-top: 100px;
+    padding: 10px;
+    align-items: center;
+}
+
+.tweet {
+    list-style-type: none;
+    width: 50%;
+    word-wrap: break-word;
+    margin: auto;
+}
+
+.bwDateTime {
+    margin-top: 10px;
+    background-color: #FE5F55;
+}
+
+.bwLoc {
+    margin-top: 10px;
+    width: fit-content;
+    background-color: #FE5F55;
+}
+
+#chatPerson {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#message-form {
+    width: 60%;
+    height: 100px;
+    background-color: #0c0cc3;
+    bottom: 0;
+    bottom: 0; /* Place it at the bottom of the container */
+    left: 0; /* Adjust the left position if needed */
+    right: 0; /* Adjust the right position if needed */
+    overflow-y: scroll;
+}
+
+#typeMessage, #sendMessage {
+    display: inline;
+}
+
+#typeMessage {
+    width: 60%;
+    height: 10px;
+}
+
+.message-content {
+    position: relative;
+}
+
+.floatRight {
+    margin-left: 60%; 
+    float: right;
+}
+
+.floatLeft {
+    clear: both;
+}
+
+.overflow {
+    height: 50%;
+
+}
+
+#messageFiller {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.timestamp {
+    font-size: 10px;
+    width: fit-content;
+    float: right;
+}
+
+@keyframes movement {
+    0% {
+        opacity: 100%;
+        margin-bottom: 0px;
+    }
+    100% {
+        opacity: 0%;
+        margin-bottom: 150px;
+    }
+}
+
+div.animation {
+    width: 10px;
+    height: 50px;
+    opacity: 0%;
+    bottom: 0px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: thick;
+    border-color: #222222;
+    position: absolute;
+    background-color:#FE5F55;
+}
+
+.one {
+    left: 500px;
+    animation: movement 3s 2s linear infinite;
+}
+
+.two {
+    left: 600px;
+    animation: movement 3s 0.5s linear infinite;
+}
+
+.three {
+    left: 700px;
+    animation: movement 3s 6s linear infinite;
+}
+
+.four {
+    left: 800px;
+    animation: movement 3s 4.5s linear infinite;
+}
+
+.five {
+    left: 900px;
+    animation: movement 3s 5s linear infinite;
+}
+
+.six {
+    left: 1000px;
+    animation: movement 3s 2.3s linear infinite;
+}
+
+::selection {
+    color: #F7F7FF;
+    background-color: #222222;
+}
+
+.tweet {
+    background-color: #F7F7FF;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tweet-caption, .tweet-content, .tweet-time {
+    margin-bottom: 10px;
+}
+
+.tweet-caption, .tweet-content {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.tweet-time {
+    font-size: 12px;
+    color: #888;
+}
+
+.leftnav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.leftnav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.leftnav a:hover {
+    background-color: #555;
+}
+
+.middle{
+    margin-left: 175px;
+    padding: 0px 10px;
+    margin-top: 20px;
+}
